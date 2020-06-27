@@ -9,12 +9,13 @@ import com.example.projetointegrador.R
 import com.example.projetointegrador.models.RotaMinima
 import kotlinx.android.synthetic.main.rota_min_cardview.view.*
 
-class RotaMinimaAdapter(var percursos:MutableList<RotaMinima>) :RecyclerView.Adapter<RotaMinimaAdapter.ViewHolder>(){
+class RotaMinimaAdapter(var percursos:MutableList<RotaMinima>, var onClick:(RotaMinima)->Unit) :RecyclerView.Adapter<RotaMinimaAdapter.ViewHolder>(){
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.casa1.text = percursos[position].cidadeAlvo
         holder.casa2.text = percursos[position].cidadeAnterior
         holder.distancia.text = String.format("%.2f",percursos[position].distanciaMinima)
+        holder.itemView.setOnClickListener { onClick(percursos[position]) }
     }
 
     override fun getItemCount(): Int = percursos.size

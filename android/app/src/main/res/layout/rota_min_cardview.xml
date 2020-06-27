@@ -19,7 +19,7 @@
             android:id="@+id/casaOrigem_imageView"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
-            android:text="@string/origem"
+            android:text="@string/palavafnl"
             android:textSize="18sp"
             android:gravity="center"
             android:textColor="@android:color/black"
