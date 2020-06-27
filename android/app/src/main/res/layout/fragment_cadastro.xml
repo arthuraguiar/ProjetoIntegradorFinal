@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RotasMinFragment">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:background="@android:color/white"
+      >
+      <TextView
+          android:id="@+id/rotas_min_label"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/rotas_m_nimas"
+          android:textSize="32sp"
+          android:textColor="@android:color/black"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"/>
+
+      <androidx.recyclerview.widget.RecyclerView
+          android:id="@+id/rota_min_recyclerview"
+          android:layout_width="wrap_content"
+          android:layout_height="0dp"
+          android:layout_marginTop="20dp"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintTop_toBottomOf="@id/rotas_min_label"
+          tools:listitem="@layout/rota_min_cardview" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

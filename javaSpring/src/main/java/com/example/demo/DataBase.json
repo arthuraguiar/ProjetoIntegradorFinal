@@ -1,0 +1,52 @@
+[
+    {
+        "Cidade1": "A",
+        "Cidade2": "B",
+        "Distancia": 8.3
+    },
+    {
+        "Cidade1": "A",
+        "Cidade2": "C",
+        "Distancia": 4.4
+    },
+    {
+        "Cidade1": "A",
+        "Cidade2": "D",
+        "Distancia": 0.1
+    },
+    {
+        "Cidade1": "B",
+        "Cidade2": "C",
+        "Distancia": 8.4
+    },
+    {
+        "Cidade1": "C",
+        "Cidade2": "D",
+        "Distancia": 10.0
+    },
+    {
+        "Cidade1": "D",
+        "Cidade2": "G",
+        "Distancia": 5.5
+    },
+    {
+        "Cidade1": "D",
+        "Cidade2": "E",
+        "Distancia": 0.8
+    },
+    {
+        "Cidade1": "D",
+        "Cidade2": "F",
+        "Distancia": 8.0
+    },
+    {
+        "Cidade1": "E",
+        "Cidade2": "H",
+        "Distancia": 7.2
+    },
+    {
+        "Cidade1": "F",
+        "Cidade2": "E",
+        "Distancia": 6.4
+    }
+]

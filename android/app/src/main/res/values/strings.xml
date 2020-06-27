@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ProjetoIntegrador</string>
+    <string name="house_photo">house photo</string>
+    <string name="arrow">arrow</string>
+    <string name="zero">0</string>
+    <string name="title_main">Dijkstra\'s algorithm</string>
+    <string name="resolve_problem">Resolve Problem</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="_8_3">8.3</string>
+    <string-array name="destination_array">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="casa_1">Casa 1:</string>
+    <string name="casa_2">Casa 2:</string>
+    <string name="distancia">Distancia:</string>
+    <string name="DONE">DONE</string>
+    <string name="origem">ORIGEM:</string>
+    <string name="anterior">ANTERIOR:</string>
+    <string name="rotas_m_nimas">Rotas Mínimas</string>
+    <string name="get_file">GET FILE</string>
+</resources>

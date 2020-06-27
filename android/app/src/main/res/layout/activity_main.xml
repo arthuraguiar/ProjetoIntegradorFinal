@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8e99f3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/title_main"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rotas_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        android:layout_margin="8dp"
+        android:padding="4dp"
+        app:layout_constraintTop_toBottomOf="@id/main_title"
+        app:layout_constraintBottom_toTopOf="@id/solve_problem_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/rota_cardview" />
+
+    <Button
+        android:id="@+id/solve_problem_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resolve_problem"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"
+        android:backgroundTint="#26418f"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/getFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/get_file"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#26418f"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <RelativeLayout
+        android:id="@+id/progressbar_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        android:visibility="invisible"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@android:color/white">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_height="88dp"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
